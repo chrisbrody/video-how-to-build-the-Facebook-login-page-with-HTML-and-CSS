@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- character set -->
+    <meta charset="utf-8">
+    <!-- title -->
+    <title></title>
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <div class="container">
+  <div class="topText"></div>
+  <div class="fire"></div><!--end fire-->
+  <div class="oldMan"></div><!--end oldman-->
+  <div class="sword"></div><!--end sword-->
+</div><!--end container-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+
+  // not complete, still need to add sound.
+
+$.fn.teletype = function(opts){
+  var $this = this,
+      defaults = {
+          animDelay: 50
+      },
+      settings = $.extend(defaults, opts);
+
+  $.each(settings.text.split(''), function(i, letter){
+      setTimeout(function(){
+          $this.html($this.html() + letter);
+      }, settings.animDelay * i);
+  });
+};
+
+$(function(){
+  $('.topText').teletype({
+      animDelay: 100,
+      text: "IT'S DANGEROUS, I'VE NEVER DONE THIS."
+  });
+});
+
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+#FB_CODE 1.1 - Intro to coding the Facebook paper prototype
+
+
+#FB_CODE 1.2 - Outro to coding the Facebook paper prototype
+
+
+
+#VIDEO_TEMPLATE 1.1 - Intro to
+Hey, Chris from Codify Academy here, in this video we're gonna convert the Facebook paper-prototype we did in the last video, into a website.
+
+
+
+Here is my paper prototype from the last video,
+and my additions to it,
+I'm gonna keep these close by,
+as we're taking the final steps to build a site from scratch.
+
+Please, understand, you want to practice this process often, i've been doing these type of projects from years and I'm going struggle, and as developers this is what we do, we create solutions for problems we haven't seen before.
+
+
+That being said lets get to building.
